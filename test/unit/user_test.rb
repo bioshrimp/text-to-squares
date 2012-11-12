@@ -12,13 +12,14 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "a new user has no id" do
-  	user = User.new
-  	assert user.id == nil
+    user = User.new
+    assert user.id == nil
   end
 
   test "a saved user has an id" do
-  	user = User.new
-  	user.save
-  	assert user.id != nil
+    user = User.new
+    user.save
+    assert user.id != nil
   end
 end
+
